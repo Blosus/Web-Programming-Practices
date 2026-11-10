@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../css/tabla.css" />
+        <title>Tabla dinamica</title>
+    </head>
+    <body>
+        <a href="../html/practicasjs.html">Regresar</a>
+        <center>
+            <h2>Agregar estudiantes</h2>
+        </center>
+
+        <label>ID:</label>
+        <input type="text" placeholder="ID" id="idInput" />
+
+        <label>Nombre:</label>
+        <input type="text" placeholder="nombre" id="nomInput" />
+
+        <label>Escuela:</label>
+        <input type="text" placeholder="Escuela" id="escInput" />
+
+        <button id="agregar" class="btn">Agregar</button>
+
+        <table id="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Escuela</th>
+                </tr>
+            </thead>
+            <tbody id="tBody"></tbody>
+        </table>
+        <script src="../js/tabla.js"></script>
+    </body>
+</html>

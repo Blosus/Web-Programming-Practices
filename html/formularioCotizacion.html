@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=>, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="../css/formularioCotizacionCSS.css" />
+    </head>
+    <body>
+        <header id="encabezado">
+            <img src="../assets/LogoPNG.png" alt="Autosleek" />
+            <h1>Cotizacion de Carro</h1>
+            <nav>
+                <a href="../html/automoviles.html"> >> Regresar</a>
+            </nav>
+        </header>
+
+        <section class="card">
+            <form action="https://formsubmit.co/tu-correo@example.com" method="post">
+                <label for="Nombre">Nombre del cliente:</label>
+                <input
+                    type="text"
+                    id="nombre"
+                    name="Nombre"
+                    placeholder="Escribe tu nombre..."
+                    minlength="3"
+                    required
+                />
+                <br />
+
+                <label for="Email">Email:</label>
+                <input type="email" id="email" name="Email Cliente" placeholder="Escribe tu correo..." required />
+                <br />
+
+                <label for="Poblacion">Poblacion:</label>
+                <input type="text" id="poblacion" name="Poblacion" placeholder="Escribe tu poblacion..." required />
+                <br />
+
+                <label for="Edad">Edad:</label>
+                <input type="number" id="edad" name="Edad" min="18" max="100" required />
+                <br />
+
+                <label for="Automovil">Automovil</label>
+                <select name="Automoviles" id="autos">
+                    <option value="Nissan Frontier">Nissan Frontier</option>
+                    <option value="Nissan Kick Play">Nissan Kick Play</option>
+                    <option value="Nissan Sentra">Nissan Sentra</option>
+                    <option value="Ford Expedition">Ford Expedition</option>
+                    <option value="Ford Explorer">Ford Explorer</option>
+                    <option value="Ford Mustang">Ford Mustang</option>
+                    <option value="Toyota MX">Toyota MX</option>
+                    <option value="Toyota Oaxaca">Toyota Oaxaca</option>
+                    <option value="Toyota SMA">Toyota SMA</option>
+                </select>
+                <br />
+
+                <label for="pagoInicial">Pago Inicial</label>
+                <input type="number" id="Porcentaje del Pago Inicial" min="10" max="100" placeholder="%" required />
+                <br />
+
+                <label>Plazo de Pago (Meses)</label><br />
+                <input type="radio" name="Plazo de Pago" id="plazo12" value="12 meses" checked required />
+                <label for="plazo12">12 meses</label>
+                <input type="radio" name="Plazo de Pago" id="plazo24" value="24 meses" />
+                <label for="plazo24">24 meses</label>
+                <input type="radio" name="Plazo de Pago" id="plazo36" value="36 meses" />
+                <label for="plazo36">36 meses</label>
+                <input type="radio" name="Plazo de Pago" id="plazo48" value="48 meses" />
+                <label for="plazo48">48 meses</label>
+                <br />
+
+                <label for="Comentarios">Comentarios</label>
+                <br />
+                <textarea
+                    maxlength="200"
+                    rows="10"
+                    cols="50"
+                    placeholder="Escribe tus comentarios..."
+                    name="Comentarios"
+                    id="idComentarios"
+                ></textarea>
+
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpiar</button>
+            </form>
+        </section>
+    </body>
+</html>

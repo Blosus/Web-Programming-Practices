@@ -1,0 +1,21 @@
+/*Estilos de dispositivos pequeño*/
+
+body {
+    background-color: #4baeaa;
+    font-size: 14px;
+}
+
+/*Panatallas medianas */
+@media (min-width: 600px) and (max-width: 1023px) {
+    body {
+        background-color: #c877ee;
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        background-color: #ebb43f;
+        font-size: 18px;
+    }
+}

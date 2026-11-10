@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=>, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="../css/formularioCSS.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Ejemplo de Formulario</h1>
+            <a href="../index.html">Index</a>
+
+            <h2>Contactos</h2>
+        </header>
+
+        <section class="card">
+            <form action="https://formsubmit.co/tu-correo@example.com" method="post">
+                <label for="Nombre">Nombre:</label>
+                <input type="text" id="nombre" name="Nombre" placeholder="Escribe tu nombre" required />
+
+                <br />
+                <label for="Edad">Edad</label>
+                <input type="number" name="Edad" id="Edad" maxlength="3" placeholder="Tu edad" required />
+                <br />
+                <label for="EstadoCivil">Estado Civil</label>
+                <select name="Estado Civil" id="edocivil">
+                    <option value="Soltero">Soltero</option>
+                    <option value="Casado">Casado</option>
+                    <option value="Divorciado">Divorciado</option>
+                    <option value="Union libre">Union libre</option>
+                    <option value="Viudo">Viudo</option>
+                </select>
+
+                <br />
+                <label for="Sexo">Sexo</label>
+                <label for="Masculino">Masculino</label>
+                <input type="radio" name="Masculino" id="idSexo" />
+
+                <label for="Femenino">Femenino</label>
+                <input type="radio" name="Femenino" id="idSexo" />
+
+                <br />
+                <label for="Idioma">Idiomas</label>
+                <label for="Español">Español</label>
+                <input type="checkbox" name="Español" id="Español" />
+
+                <label for="Ingles">Ingles</label>
+                <input type="checkbox" name="Ingles" id="Ingles" />
+
+                <label for="Chino">Chino</label>
+                <input type="checkbox" name="Chino" id="Chino" />
+
+                <br />
+                <label for="FechaNac">Fecha Nacimiento</label>
+                <input type="date" name="Fecha Nac" id="fecNac" />
+                <br />
+
+                <label for="Correo">Correo Electronico</label>
+                <input type="email" name="email" id="email" />
+
+                <textarea
+                    name="comentarios"
+                    id="comentarios"
+                    cols="50"
+                    rows="5"
+                    placeholder="Escribe aqui tus comentarios"
+                ></textarea>
+                <br />
+
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpiar</button>
+            </form>
+        </section>
+    </body>
+</html>
